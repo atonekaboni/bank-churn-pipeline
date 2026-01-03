@@ -12,20 +12,22 @@ End-to-end ETL pipeline analyzing bank customer churn with Python, PostgreSQL, D
 **Excel** → **Python/Pandas** → **PostgreSQL** → **Docker/Metabase** → **Interactive Dashboard**
 
 ## Project Overview
-This project analyzes 10,000 European bank customer records to identify churn patterns and risk factors. The complete data pipeline transforms raw Excel data into an interactive business intelligence dashboard.
+
+This project analyzes 10,000 European bank customer records to identify churn patterns and risk factors. The pipeline transforms raw Excel data into an interactive dashboard.
 
 <p align="center">
   <img width="800" alt="Bank Churn Analysis Dashboard - Metabase" src="https://github.com/user-attachments/assets/120c0e3d-564a-46bf-ab17-537ed988605f" />
 </p>
 
-**Dataset:** Bank Customer Data from [Maven Analytics](https://maven-datasets.s3.amazonaws.com/Bank+Customer+Churn/Bank+Customer+Churn.zip) (Chris Bruehl)  
+**Dataset:** Bank Customer Data from [Maven Analytics](https://maven-datasets.s3.amazonaws.com/Bank+Customer+Churn/Bank+Customer+Churn.zip) (Chris Bruehl)
 
 ### Pipeline Architecture
+
+The data flows through five stages: starting with raw Excel files, cleaned and analyzed in Python/Jupyter, stored in PostgreSQL database, deployed through Docker containers, and visualized in Metabase dashboard.
 
 <p align="center">
   <img width="900" alt="Data Pipeline Flow" src="https://github.com/user-attachments/assets/68c65813-3ec9-44d5-9fa7-a2503ff5de12" />
 </p>
-
 
 ## Project Phases
 
@@ -86,23 +88,39 @@ Customers who left had **26% higher balance-to-income ratios** (1.31 vs 1.04), s
 Middle-aged customers (40-50 years) show distinct churn patterns compared to other age groups.
 
 ### 6. Geographic Variation
-Churn patterns differ across France, Germany, and Spain, with specific markets showing higher risk.
+Germany shows the highest churn rate at 32.4%, while France and Spain have lower rates at 16.2% and 16.7% respectively.
 
 ## Technologies
 
-| Category | Tools |
-|----------|-------|
-| **Languages** | Python, SQL |
-| **Libraries** | Pandas, NumPy, Matplotlib, Seaborn, SQLAlchemy, psycopg2 |
-| **Database** | PostgreSQL |
-| **Tools** | Jupyter Notebook, DataGrip, Docker, Metabase |
+<table>
+  <tr style="background-color: #f0f0f0;">
+    <th>Category</th>
+    <th>Tools</th>
+  </tr>
+  <tr>
+    <td><strong>Languages</strong></td>
+    <td>Python, SQL</td>
+  </tr>
+  <tr>
+    <td><strong>Libraries</strong></td>
+    <td>Pandas, NumPy, Matplotlib, Seaborn, SQLAlchemy, psycopg2</td>
+  </tr>
+  <tr>
+    <td><strong>Database</strong></td>
+    <td>PostgreSQL</td>
+  </tr>
+  <tr>
+    <td><strong>Tools</strong></td>
+    <td>Jupyter Notebook, DataGrip, Docker, Metabase</td>
+  </tr>
+</table>
 
 ## Project Highlights
 
 - **End-to-End Pipeline:** Complete data flow from Excel to interactive visualization
 - **ETL Automation:** Structured extraction, transformation, and loading workflow
 - **Secure Connections:** SQLAlchemy with environment variables
-- **Containerization:** Docker deployment for reproducible environment
+- **Containerization:** Docker deployment with isolated environment setup
 - **Data Quality:** Statistical outlier detection and treatment
 - **Feature Engineering:** Created analytical features for deeper insights
 - **Interactive BI:** Metabase dashboards with filtering capabilities
@@ -114,13 +132,12 @@ Churn patterns differ across France, Germany, and Spain, with specific markets s
 - Add Customer Lifetime Value (CLV) analysis
 - Create customer segmentation using clustering algorithms
 - Integrate additional data sources (transaction history, customer service interactions)
-- Build predictive model for early churn warning system
 
 ## Author
 
 **Amirhossein Tonekaboni**  
-Business Intelligence Developer | SAP ERP Consultant
+SAP Business One Consultant | BI Developer
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077b5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tonekaboni/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/atonekaboni)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?logo=google-chrome&logoColor=white)](https://atonekaboni.github.io)
+[![Portfolio](https://img.shields.io/badge/Portfolio-e53935?logo=google-chrome&logoColor=white)](https://atonekaboni.github.io)
