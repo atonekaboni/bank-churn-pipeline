@@ -34,6 +34,8 @@ The pipeline has five stages: Excel files are cleaned in Python, stored in Postg
   <img width="900" alt="Data Pipeline Flow" src="https://github.com/user-attachments/assets/68c65813-3ec9-44d5-9fa7-a2503ff5de12" />
 </p>
 
+<!-- <img width="1201" height="383" alt="Pipeline" src="https://github.com/user-attachments/assets/d11404af-96aa-4c7c-84bd-6f3870b6ebe9" /> -->
+
 ## Project Phases
 
 ### 1. Data Preparation & Exploratory Data Analysis
