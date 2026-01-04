@@ -11,6 +11,11 @@ End-to-end ETL pipeline analyzing bank customer churn with Python, PostgreSQL, D
 
 **Excel** → **Python/Pandas** → **PostgreSQL** → **Docker/Metabase** → **Interactive Dashboard**
 
+**Project Resources:**
+- **[Project Presentation](https://github.com/atonekaboni/HR/blob/assets/Bank_Churn_Pipeline.pdf)**
+- **[Data Analysis Notebook:](https://github.com/atonekaboni/HR/blob/assets/analysis_notebook.ipynb)** EDA and feature engineering
+- **[Database ETL Notebook:](https://github.com/atonekaboni/HR/blob/assets/etl_notebook.ipynb)** PostgreSQL integration
+
 ## Project Overview
 
 This project analyzes 10,000 European bank customer records to identify churn patterns and risk factors. The pipeline transforms raw Excel data into an interactive dashboard.
@@ -23,7 +28,7 @@ This project analyzes 10,000 European bank customer records to identify churn pa
 
 ### Pipeline Architecture
 
-The data flows through five stages: starting with raw Excel files, cleaned and analyzed in Python/Jupyter, stored in PostgreSQL database, deployed through Docker containers, and visualized in Metabase dashboard.
+The pipeline has five stages: Excel files are cleaned in Python, stored in PostgreSQL, containerized with Docker, and visualized in Metabase.
 
 <p align="center">
   <img width="900" alt="Data Pipeline Flow" src="https://github.com/user-attachments/assets/68c65813-3ec9-44d5-9fa7-a2503ff5de12" />
@@ -40,10 +45,21 @@ The data flows through five stages: starting with raw Excel files, cleaned and a
 - Handled missing values with median imputation and categorical labeling
 - Identified and treated outliers through statistical analysis
 
+<p align="center">
+  <img width="850" alt="Sample of cleaned dataframe" src="https://github.com/user-attachments/assets/58be66f2-aa79-409c-a735-032c4bfc4c43" />
+  <br>
+  <em>Sample of cleaned dataframe</em>
+</p>
+
 **Exploratory Analysis:**
 - Compared balance, age, and credit score by churn status
 - Distribution plots and correlation analysis
 - Examined demographic features and churn behavior relationships
+
+<p align="center">
+  <img width="32%" alt="Balance distribution by churn status" src="https://github.com/user-attachments/assets/181c02c7-3006-4d75-aa47-5652d874f880" />
+  <img width="32%" alt="Age distribution analysis" src="https://github.com/user-attachments/assets/5b5d018d-7827-4fe1-bf5b-fb508c77108b" />
+</p>
 
 **Feature Engineering:**
 - Removed identifier columns
@@ -51,6 +67,9 @@ The data flows through five stages: starting with raw Excel files, cleaned and a
 - Created balance-to-income ratio for wealth assessment
 
 **Technologies:** Python, Pandas, NumPy, Matplotlib, Seaborn, Jupyter Notebook
+
+**[View Analysis Notebook](https://github.com/atonekaboni/HR/blob/assets/analysis_notebook.ipynb)**
+
 
 ### 2. Database Integration
 
@@ -60,13 +79,23 @@ The data flows through five stages: starting with raw Excel files, cleaned and a
 
 **Technologies:** PostgreSQL, SQLAlchemy, DataGrip, psycopg2
 
+**[View ETL Notebook](https://github.com/atonekaboni/HR/blob/assets/etl_notebook.ipynb)**
+
+
 ### 3. Business Intelligence Deployment
 
 - Deployed Metabase as Docker container
 - Connected Metabase to PostgreSQL database
 - Built custom interactive dashboard with filters and visualizations
 
+<p align="center">
+  <img width="49%" alt="Dashboard metrics overview" src="https://github.com/user-attachments/assets/2e93a76b-dbff-455d-84a5-0d5add61dad8" />
+  <img width="49%" alt="Interactive filters and visualizations" src="https://github.com/user-attachments/assets/9142fe57-3397-4d74-a985-c51812cb983e" />
+</p>
+
 **Technologies:** Metabase, Docker
+
+<br>
 
 ## Key Findings
 
@@ -89,6 +118,14 @@ Middle-aged customers (40-50 years) show distinct churn patterns compared to oth
 
 ### 6. Geographic Variation
 Germany shows the highest churn rate at 32.4%, while France and Spain have lower rates at 16.2% and 16.7% respectively.
+
+<p align="center">
+  <img width="25%" alt="Churn by country" src="https://github.com/user-attachments/assets/27c9c86d-0dab-4c75-bc9d-ede190bdef7d" />
+  &nbsp;&nbsp;
+  <img width="25%" alt="Gender distribution" src="https://github.com/user-attachments/assets/8fb33e43-83fd-4c0a-978a-4e5474563b66" />
+  &nbsp;&nbsp;
+  <img width="25%" alt="Age group analysis" src="https://github.com/user-attachments/assets/d0b646c9-f8fe-4f04-8a83-f685c2257785" />
+</p>
 
 ## Technologies
 
@@ -122,7 +159,7 @@ Germany shows the highest churn rate at 32.4%, while France and Spain have lower
 - **Secure Connections:** SQLAlchemy with environment variables
 - **Containerization:** Docker deployment with isolated environment setup
 - **Data Quality:** Statistical outlier detection and treatment
-- **Feature Engineering:** Created analytical features for deeper insights
+- **Feature Engineering:** Created analytical features for wealth assessment
 - **Interactive BI:** Metabase dashboards with filtering capabilities
 
 ## Future Enhancements
@@ -136,7 +173,8 @@ Germany shows the highest churn rate at 32.4%, while France and Spain have lower
 ## Author
 
 **Amirhossein Tonekaboni**  
-SAP Business One Consultant | BI Developer
+SAP Business One Consultant
+<br>BI Developer
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077b5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tonekaboni/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/atonekaboni)
