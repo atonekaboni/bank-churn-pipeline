@@ -12,9 +12,9 @@ End-to-end ETL pipeline analyzing bank customer churn with Python, PostgreSQL, D
 **Excel** → **Python/Pandas** → **PostgreSQL** → **Docker/Metabase** → **Interactive Dashboard**
 
 **Project Resources:**
-- **[Project Presentation](https://github.com/atonekaboni/HR/blob/assets/Bank_Churn_Pipeline.pdf)**
-- **[Data Analysis Notebook:](https://github.com/atonekaboni/HR/blob/assets/analysis_notebook.ipynb)** EDA and feature engineering
-- **[Database ETL Notebook:](https://github.com/atonekaboni/HR/blob/assets/etl_notebook.ipynb)** PostgreSQL integration
+- **[Project Presentation](https://github.com/atonekaboni/bank-churn-pipeline/blob/main/docs/Bank_Churn_Pipeline.pdf)**
+- **[Data Analysis Notebook:](https://github.com/atonekaboni/bank-churn-pipeline/blob/main/notebooks/analysis_notebook.ipynb)** EDA and feature engineering
+- **[Database ETL Notebook:](https://github.com/atonekaboni/bank-churn-pipeline/blob/main/notebooks/etl_notebook.ipynb)** PostgreSQL integration
 
 ## Project Overview
 
@@ -46,9 +46,9 @@ The pipeline has five stages: Excel files are cleaned in Python, stored in Postg
 - Identified and treated outliers through statistical analysis
 
 <p align="center">
-  <img width="850" alt="Sample of cleaned dataframe" src="https://github.com/user-attachments/assets/58be66f2-aa79-409c-a735-032c4bfc4c43" />
+  <img width="850" alt="Cleaned dataframe sample" src="https://github.com/user-attachments/assets/58be66f2-aa79-409c-a735-032c4bfc4c43" />
   <br>
-  <em>Sample of cleaned dataframe</em>
+  <em>Cleaned dataframe sample</em>
 </p>
 
 **Exploratory Analysis:**
@@ -68,7 +68,7 @@ The pipeline has five stages: Excel files are cleaned in Python, stored in Postg
 
 **Technologies:** Python, Pandas, NumPy, Matplotlib, Seaborn, Jupyter Notebook
 
-**[View Analysis Notebook](https://github.com/atonekaboni/HR/blob/assets/analysis_notebook.ipynb)**
+**[View Analysis Notebook](https://github.com/atonekaboni/bank-churn-pipeline/blob/main/notebooks/analysis_notebook.ipynb)**
 
 
 ### 2. Database Integration
@@ -79,7 +79,7 @@ The pipeline has five stages: Excel files are cleaned in Python, stored in Postg
 
 **Technologies:** PostgreSQL, SQLAlchemy, DataGrip, psycopg2
 
-**[View ETL Notebook](https://github.com/atonekaboni/HR/blob/assets/etl_notebook.ipynb)**
+**[View ETL Notebook](https://github.com/atonekaboni/bank-churn-pipeline/blob/main/notebooks/etl_notebook.ipynb)**
 
 
 ### 3. Business Intelligence Deployment
